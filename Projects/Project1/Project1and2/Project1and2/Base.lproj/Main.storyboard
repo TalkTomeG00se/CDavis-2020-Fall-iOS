@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kPN-rL-iem">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="wSx-aX-lfa">
+            <objects>
+                <tabBarController id="kPN-rL-iem" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="d5Y-EB-unC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="bqA-tz-P6e"/>
+                        <segue destination="75p-BF-T6G" kind="relationship" relationship="viewControllers" id="q3p-OA-Fsa"/>
+                        <segue destination="C78-nz-AYh" kind="relationship" relationship="viewControllers" id="tRN-ri-hQc"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lvb-2S-zSZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-726" y="171"/>
+        </scene>
+        <!--Camera-->
+        <scene sceneID="ehE-38-2ck">
+            <objects>
+                <viewController id="75p-BF-T6G" customClass="SecondViewController" customModule="Project1and2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FED-N0-QgV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Haf-LB-r0w">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="580"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F9s-Dv-57t">
+                                <rect key="frame" x="121" y="638" width="173" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <state key="normal" title="Change Photo"/>
+                                <connections>
+                                    <action selector="photoButtonPressed:" destination="75p-BF-T6G" eventType="touchUpInside" id="KOr-zw-nPZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="8fx-p7-fzn"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Camera" id="e54-iS-gJ5"/>
+                    <connections>
+                        <outlet property="imageView" destination="Haf-LB-r0w" id="b6l-3e-H9H"/>
+                        <outlet property="photoButton" destination="F9s-Dv-57t" id="v1g-N3-L8j"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t4o-1I-vnC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-700" y="837.72321428571422"/>
+        </scene>
+        <!--Tracker-->
+        <scene sceneID="jMW-B2-iG8">
+            <objects>
+                <viewController id="C78-nz-AYh" customClass="ThirdViewController" customModule="Project1and2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vTi-Mt-C8r">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Workout Tracker" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZWU-Zw-moc">
+                                <rect key="frame" x="87" y="70" width="240" height="35"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m9i-C7-4AK">
+                                <rect key="frame" x="20" y="158" width="141" height="42"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Did Workout"/>
+                                <connections>
+                                    <action selector="workoutButtonPressed:" destination="C78-nz-AYh" eventType="touchUpInside" id="KIL-5N-5Ns"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ezp-pS-SPW">
+                                <rect key="frame" x="226" y="164" width="168" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Skipped Workout"/>
+                                <connections>
+                                    <action selector="workoutButtonPressed:" destination="C78-nz-AYh" eventType="touchUpInside" id="Y26-GB-0k1"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Uoc-6X-4Yr">
+                                <rect key="frame" x="0.0" y="346" width="414" height="388"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="UlN-Y9-ANH" detailTextLabel="TNc-m6-GEa" style="IBUITableViewCellStyleSubtitle" id="lrp-QB-0fv">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="55.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lrp-QB-0fv" id="Lvj-wy-Xb8">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="55.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="UlN-Y9-ANH">
+                                                    <rect key="frame" x="20" y="10" width="33" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="TNc-m6-GEa">
+                                                    <rect key="frame" x="20" y="31.5" width="44" height="14.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Workout History" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jM0-TW-Aba">
+                                <rect key="frame" x="98" y="273" width="218" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Xj7-wg-ViM"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="m9i-C7-4AK" firstAttribute="leading" secondItem="Xj7-wg-ViM" secondAttribute="leading" constant="20" id="Dko-3p-ls6"/>
+                            <constraint firstItem="Xj7-wg-ViM" firstAttribute="trailing" secondItem="jM0-TW-Aba" secondAttribute="trailing" constant="98" id="NZG-Nb-eeP"/>
+                            <constraint firstItem="ezp-pS-SPW" firstAttribute="top" secondItem="Xj7-wg-ViM" secondAttribute="top" constant="120" id="Oeh-U1-0Jr"/>
+                            <constraint firstItem="jM0-TW-Aba" firstAttribute="top" secondItem="ezp-pS-SPW" secondAttribute="bottom" constant="73" id="WAs-4U-Shy"/>
+                            <constraint firstItem="ZWU-Zw-moc" firstAttribute="leading" secondItem="Xj7-wg-ViM" secondAttribute="leading" constant="87" id="WoD-hw-HLd"/>
+                            <constraint firstItem="Xj7-wg-ViM" firstAttribute="trailing" secondItem="ezp-pS-SPW" secondAttribute="trailing" constant="20" id="Zce-Ox-muv"/>
+                            <constraint firstItem="ZWU-Zw-moc" firstAttribute="top" secondItem="Xj7-wg-ViM" secondAttribute="top" constant="26" id="moL-nl-O7O"/>
+                            <constraint firstItem="jM0-TW-Aba" firstAttribute="leading" secondItem="Xj7-wg-ViM" secondAttribute="leading" constant="98" id="nFc-zL-CZJ"/>
+                            <constraint firstItem="Xj7-wg-ViM" firstAttribute="trailing" secondItem="ZWU-Zw-moc" secondAttribute="trailing" constant="87" id="rNo-rQ-c20"/>
+                            <constraint firstItem="m9i-C7-4AK" firstAttribute="top" secondItem="Xj7-wg-ViM" secondAttribute="top" constant="114" id="txB-Xa-cSH"/>
+                            <constraint firstItem="ezp-pS-SPW" firstAttribute="leading" secondItem="m9i-C7-4AK" secondAttribute="trailing" constant="65" id="w4O-ef-sTn"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Tracker" id="Maj-cE-2JO"/>
+                    <connections>
+                        <outlet property="tableView" destination="Uoc-6X-4Yr" id="Xgv-A9-gGd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p5N-lW-ub0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140.57971014492756" y="835.71428571428567"/>
+        </scene>
+        <!--Map-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Project1and2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="c13-OG-twm">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="630"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ptE-13-xoY">
+                                <rect key="frame" x="116" y="681" width="185" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Show Coordinates"/>
+                                <connections>
+                                    <action selector="locationButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RBk-dm-nAH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Map" id="pxJ-QG-eEL"/>
+                    <connections>
+                        <outlet property="locationButton" destination="ptE-13-xoY" id="pyU-gJ-SYp"/>
+                        <outlet property="mapView" destination="c13-OG-twm" id="aJo-Cq-VwD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140.57971014492756" y="113.83928571428571"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

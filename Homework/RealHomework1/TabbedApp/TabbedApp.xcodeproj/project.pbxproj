@@ -8,9 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		A001B83425074FC5002A768B /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A001B83325074FC5002A768B /* ThirdViewController.swift */; };
-		A001B838250858EF002A768B /* mountain2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A001B835250858EE002A768B /* mountain2.jpg */; };
-		A001B839250858EF002A768B /* mountain3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A001B836250858EF002A768B /* mountain3.jpg */; };
-		A001B83A250858EF002A768B /* mountain1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A001B837250858EF002A768B /* mountain1.jpg */; };
 		A0FB75942507333900564CAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FB75932507333900564CAC /* AppDelegate.swift */; };
 		A0FB75962507333900564CAC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FB75952507333900564CAC /* SceneDelegate.swift */; };
 		A0FB75982507333900564CAC /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FB75972507333900564CAC /* FirstViewController.swift */; };
@@ -18,13 +15,13 @@
 		A0FB759D2507333900564CAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0FB759B2507333900564CAC /* Main.storyboard */; };
 		A0FB759F2507333A00564CAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0FB759E2507333A00564CAC /* Assets.xcassets */; };
 		A0FB75A22507333A00564CAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0FB75A02507333A00564CAC /* LaunchScreen.storyboard */; };
+		FAAE876C258034C10041DF06 /* mountain1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FAAE8769258034C00041DF06 /* mountain1.jpg */; };
+		FAAE876D258034C10041DF06 /* mountain2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FAAE876A258034C10041DF06 /* mountain2.jpg */; };
+		FAAE876E258034C10041DF06 /* mountain3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FAAE876B258034C10041DF06 /* mountain3.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A001B83325074FC5002A768B /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
-		A001B835250858EE002A768B /* mountain2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = mountain2.jpg; path = ../../../../Downloads/mountain2.jpg; sourceTree = "<group>"; };
-		A001B836250858EF002A768B /* mountain3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = mountain3.jpg; path = ../../../../Downloads/mountain3.jpg; sourceTree = "<group>"; };
-		A001B837250858EF002A768B /* mountain1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = mountain1.jpg; path = ../../../../Downloads/mountain1.jpg; sourceTree = "<group>"; };
 		A0FB75902507333900564CAC /* TabbedApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TabbedApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0FB75932507333900564CAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0FB75952507333900564CAC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -34,6 +31,9 @@
 		A0FB759E2507333A00564CAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A0FB75A12507333A00564CAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A0FB75A32507333A00564CAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAAE8769258034C00041DF06 /* mountain1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mountain1.jpg; sourceTree = "<group>"; };
+		FAAE876A258034C10041DF06 /* mountain2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mountain2.jpg; sourceTree = "<group>"; };
+		FAAE876B258034C10041DF06 /* mountain3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mountain3.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,9 +66,9 @@
 		A0FB75922507333900564CAC /* TabbedApp */ = {
 			isa = PBXGroup;
 			children = (
-				A001B837250858EF002A768B /* mountain1.jpg */,
-				A001B835250858EE002A768B /* mountain2.jpg */,
-				A001B836250858EF002A768B /* mountain3.jpg */,
+				FAAE8769258034C00041DF06 /* mountain1.jpg */,
+				FAAE876A258034C10041DF06 /* mountain2.jpg */,
+				FAAE876B258034C10041DF06 /* mountain3.jpg */,
 				A0FB75932507333900564CAC /* AppDelegate.swift */,
 				A0FB75952507333900564CAC /* SceneDelegate.swift */,
 				A0FB75972507333900564CAC /* FirstViewController.swift */,
@@ -141,9 +141,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0FB75A22507333A00564CAC /* LaunchScreen.storyboard in Resources */,
-				A001B838250858EF002A768B /* mountain2.jpg in Resources */,
-				A001B83A250858EF002A768B /* mountain1.jpg in Resources */,
-				A001B839250858EF002A768B /* mountain3.jpg in Resources */,
+				FAAE876D258034C10041DF06 /* mountain2.jpg in Resources */,
+				FAAE876E258034C10041DF06 /* mountain3.jpg in Resources */,
+				FAAE876C258034C10041DF06 /* mountain1.jpg in Resources */,
 				A0FB759F2507333A00564CAC /* Assets.xcassets in Resources */,
 				A0FB759D2507333900564CAC /* Main.storyboard in Resources */,
 			);
